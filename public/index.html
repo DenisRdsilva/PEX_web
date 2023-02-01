@@ -1,43 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>React App</title>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <!--    -->
+    <div id="navbar">
+
+    <!--  Barra lateral  -->
+
+      <div>
+        <img class="Logo1" src="media/Logo1.png">
+        <img class="Logo2" src="media/Logo2.png">
+        <img class="Logo3" src="media/Logo3.png">
+        <img class="Logo4" src="media/Logo4.png">
+        <img class="Logo5" src="media/Logo5.png">
+      </div>
+
+      <!--  Itens do menu vertical -->
+
+      <div class="item1 item">
+        <img class="navIcon1" src="media/navIcon1.png">
+        <a class="itemTitle itemTitle1">Dashbord</a>
+      </div>
+
+      <div class="item2 item">
+        <img class="navIcon2" src="media/navIcon2.png">
+        <a class="itemTitle itemTitle2">Vendas</a>
+      </div>
+
+      <div class="item3 item">
+        <img class="navIcon3" src="media/navIcon3.png">
+        <a class="itemTitle itemTitle3">Relatórios</a>
+      </div>
+
+      <div class="item4 item">
+        <img class="navIcon4" src="media/navIcon4.png">
+        <a class="itemTitle itemTitle4">Lojas parceiras</a>
+      </div>
+
+      <div class="item5 item">
+        <img class="navIcon5" src="media/navIcon5.png">
+        <a class="itemTitle itemTitle5">Clientes</a>
+      </div>
+
+      <!--  Itens do menu vertical -->
+
+      <!--  Barra lateral  -->
+
+    </div>
+
+    <div id="content">
+
+      <!--  Conteúdo principal -->
+
+      <!--  Parte superior - Título, barra de busca e filtragem por data -->
+
+      <div class="header">
+        <p style="position: absolute; width: 143px; height: 24px; left: 30px; top: 49px; font-size: 14px; 
+        line-height: 24px; color: #707EAE; margin: 0px;">Principal / Dashboard</p>
+        <p class="title">Dashboard</p>
+        <div class="actions">
+          <input type="text" placeholder="Busca" class="search">
+          <img src="media/action1.png" height="19.5px" width="15.17px"
+            style="top: 20.5px; left: 248.41px; position: absolute;">
+          <img src="media/action2.png" height="18px" width="16.09px"
+            style="top: 21px; left: 288.96px; position: absolute;">
+          <img src="media/action3.png" height="20px" width="20px" style="top: 20px; left: 328px; position: absolute;">
+          <img class="avatar" src="media/avatar.png" height="41px" width="41px">
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <p style="color: #707EAE; left: 30px; top: 18px; bottom: 19px; position: absolute; 
+        margin-top: 0px; margin-bottom: 0px; font-weight: 500; font-size: 14px; line-height: 24px;">
+          Filtrar por data</p>
+        <input type="text" placeholder="Data inicial" class="range1">
+        <input type="text" placeholder="Data final" class="range2">
+      </div>
+
+      <!--  Parte superior - Título, barra de busca e filtragem por data -->
+
+      <!-- Os conteúdos da página foram separados por pacotes de cards -->
+
+      <!-- Primeiro pacote de cards -->
+
+      <div class="cardSet1">
+
+        <div class="colorbox" style="background-color: #EC7A7A; Left: 20px;;">
+          <div
+            style="border-radius: 50%; background-color: #FFFFFF; width: 56px; height: 56px; top: 22px; position: absolute; left: 16px;">
+            <img src="media/dolar1.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="padbox weight"
+            style="color: #FFFFFF; font-size: 48px; line-height: 32px; top: 109px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            R$
+            312.321,00</p>
+          <p class="padbox"
+            style="color: #FFFFFF; opacity: 0.7; font-size:24px; line-height: 24px; top: 158px; position: absolute; margin: 0px;">
+            Receita total</p>
+          <div
+            style="width: 380px; height: 1px; background-color: #E9EDF7; letter-spacing: -2%; position: absolute; top: 212px;">
+          </div>
+          <p class="padbox weight"
+            style="color: #FFFFFF; font-size: 24px; line-height: 32px; top: 230px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            R$ 67,20</p>
+          <p class="padbox"
+            style="color: #FFFFFF; opacity: 0.7; font-size: 14px; line-height: 24px; top: 261px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            Média por cliente</p>
+        </div>
+
+        <div class="colorbox" style="background-color: #7A85EC; Left: 420px;">
+          <div
+            style="border-radius: 50%; background-color: #FFFFFF; width: 56px; height: 56px; top: 22px; position: absolute; left: 16px;">
+            <img src="media/dolar2.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="padbox weight"
+            style="color: #FFFFFF; font-size: 48px; line-height: 32px; top: 109px; position: absolute; margin: 0px;">
+            R$ 74.421,00</p>
+          <p class="padbox"
+            style="color: #FFFFFF; opacity: 0.7; font-size:24px; line-height: 24px; top: 158px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            Lucro total</p>
+          <div
+            style="width: 380px; height: 1px; background-color: #E9EDF7; letter-spacing: -2%; position: absolute; top: 212px;">
+          </div>
+          <p class="padbox weight"
+            style="color: #FFFFFF; font-size: 24px; line-height: 32px; top: 230px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            R$ 42,30</p>
+          <p class="padbox"
+            style="color: #FFFFFF; opacity: 0.7; font-size: 14px; line-height: 24px; top: 261px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            Média por cliente</p>
+        </div>
+
+        <div class="colorbox" style="background-color: #65D4AC; Left: 820px;">
+          <div
+            style="border-radius: 50%; background-color: #FFFFFF; width: 56px; height: 56px; top: 22px; position: absolute; left: 16px;">
+            <img src="media/dolar3.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="padbox weight"
+            style="color: #FFFFFF; font-size: 48px; line-height: 32px; top: 109px; position: absolute; margin: 0px;">R$
+            3,12</p>
+          <p class="padbox"
+            style="color: #FFFFFF; opacity: 0.7; font-size:24px; line-height: 24px; top: 158px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            Luvro por venda</p>
+          <div
+            style="width: 380px; height: 1px; background-color: #E9EDF7; letter-spacing: -2%; position: absolute; top: 212px;">
+          </div>
+          <p class="padbox weight"
+            style="color: #FFFFFF; font-size: 24px; line-height: 32px; top: 230px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            R$ 12,40</p>
+          <p class="padbox"
+            style="color: #FFFFFF; opacity: 0.7; font-size: 14px; line-height: 24px; top: 261px; letter-spacing: -2%; position: absolute; margin: 0px;">
+            Média por cliente</p>
+        </div>
+
+      </div>
+
+      <!-- Primeiro pacote de cards -->
+
+      <div class="cardSet2">
+
+      <!-- Segundo pacote de cards -->
+
+        <div class="minibox" style="position: absolute; left: 20px;">
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 10px; Left: 23px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; line-height: 132%;">
+            Clientes ativos</p>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 33px; Left: 23px; 
+          color: #2B3674; font-size: 24px; line-height: 32px; line-height: 102%">
+            3.312</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 67px; Left: 23px; 
+          color: #05CD99; font-size: 12px; line-height: 20px; line-height: 132%;">
+            +2,6% (+12)</p>
+        </div>
+
+        <div class="minibox" style="position: absolute; left: 289px;">
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 10px; Left: 23px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; line-height: 132%;">
+            Novos clientes</p>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 33px; Left: 23px; 
+          color: #2B3674; font-size: 24px; line-height: 32px; line-height: 102%">
+            12</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 67px; Left: 23px; 
+          color: #05CD99; font-size: 12px; line-height: 20px; line-height: 132%;">
+            +15,3% (+2)</p>
+        </div>
+
+        <div class="minibox" style="position: absolute; left: 558px;">
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 10px; Left: 23px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; line-height: 132%;">
+            Clientes adicionados</p>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 33px; Left: 23px; 
+          color: #2B3674; font-size: 24px; line-height: 32px; line-height: 102%">
+            42</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 67px; Left: 23px; 
+          color: #05CD99; font-size: 12px; line-height: 20px; line-height: 132%;">
+            +42,6% (+8)</p>
+        </div>
+
+        <div class="minibox" style="position: absolute; left: 827px;">
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 10px; Left: 23px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; line-height: 132%;">
+            LTV</p>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 33px; Left: 23px; 
+          color: #2B3674; font-size: 24px; line-height: 32px; line-height: 102%">
+            R$ 142,32</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 67px; Left: 23px; 
+          color: #CD0505; font-size: 12px; line-height: 20px; line-height: 132%;">
+            -22,6% (+R$ 12,20)</p>
+        </div>
+
+        <div class="minibox" style="position: absolute; left: 1096px;">
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 10px; Left: 23px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; line-height: 132%;">
+            Turnover</p>
+          <div class="turnover">
+            <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 33px; Left: 23px; 
+          color: #2B3674; font-size: 24px; line-height: 32px; line-height: 102%">
+              24,3%</p>
+            <p style="margin: 0px; height: 13px; position: absolute; Top: 38px; Left: 97px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; display: flex; align-items: center;">
+              32</p>
+          </div>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 67px; Left: 23px; 
+          color: #05CD99; font-size: 12px; line-height: 20px; line-height: 132%;">
+            +42,6% (+3)</p>
+        </div>
+
+        <div style="position: absolute; left: 1365px; top: 620px;
+          width: 244px; height: 95px; border-radius: 20px; background-color: #ffffff;">
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 10px; Left: 23px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px; line-height: 132%;">
+            Turnover recuperado</p>
+          <div class="turnover">
+            <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 33px; Left: 23px; 
+          color: #2B3674; font-size: 24px; line-height: 32px; line-height: 102%">
+              54,42%</p>
+            <p style="margin: 0px; height: 13px; position: absolute; Top: 38px; Left: 115px; 
+            color: #A3AED0; font-size: 14px; line-height: 24px; display: flex; align-items: center;">
+              12</p>
+          </div>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 67px; Left: 23px; 
+          color: #05CD99; font-size: 12px; line-height: 20px; line-height: 132%;">
+            +32,6% (+6)</p>
+        </div>
+
+      </div>
+
+        <!-- Segundo pacote de cards -->
+
+      <div class="cardSet3">
+
+        <!-- Terceiro pacote de cards -->
+
+        <div class="values" style="position: absolute; left: 20px;">
+          <div
+            style="border-radius: 50%; background-color: #F4F7FE; width: 56px; height: 56px; top: 20px; position: absolute;">
+            <img src="media/dolar4.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 91px;
+          color: #2B3674; font-size: 34px; line-height: 32px;">
+            312.321</p>
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 122px; 
+              color: #A3AED0; font-size: 14px; line-height: 24px;">
+            Cotações realizadas</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 156px; 
+          color: #05CD99; font-size: 12px; line-height: 20px;">
+            +15,3% (+223)</p>
+        </div>
+
+        <div class="values" style="position: absolute; left: 427px;">
+          <div
+            style="border-radius: 50%; background-color: #F4F7FE; width: 56px; height: 56px; top: 20px; position: absolute;">
+            <img src="media/dolar4.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 91px;
+          color: #2B3674; font-size: 34px; line-height: 32px;">
+            212.012</p>
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 122px; 
+              color: #A3AED0; font-size: 14px; line-height: 24px;">
+            Vendas finalizadas</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 156px; 
+          color: #05CD99; font-size: 12px; line-height: 20px;">
+            +15,3% (+223)</p>
+        </div>
+
+        <div class="values" style="position: absolute; left: 834px;">
+          <div
+            style="border-radius: 50%; background-color: #F4F7FE; width: 56px; height: 56px; top: 20px; position: absolute;">
+            <img src="media/dolar4.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 91px;
+          color: #2B3674; font-size: 34px; line-height: 32px;">
+            42.021</p>
+          <p style="margin: 0px; height: 13px; position: absolute; Top: 122px; 
+              color: #A3AED0; font-size: 14px; line-height: 24px;">
+            Cotações não concluídas</p>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 156px; 
+          color: #05CD99; font-size: 12px; line-height: 20px;">
+            +15,3% (+223)</p>
+        </div>
+
+        <div style="position: absolute; left: 1241px; top: 737px; background-color: #ffffff; padding-left: 16px;
+          width: 354px; height: 196px; border-radius: 20px;">
+          <div
+            style="border-radius: 50%; background-color: #F4F7FE; width: 56px; height: 56px; top: 20px; position: absolute;">
+            <img src="media/dolar4.png"
+              style="height: 24.63px; margin: 0px; position: absolute; Top: 15.83px; Left: 20.42px">
+          </div>
+          <p class="weight" style="margin: 0px; height: 31px; position: absolute; Top: 91px;
+          color: #2B3674; font-size: 34px; line-height: 32px;">
+            3.122</p>
+          <div class="turnover">
+            <p style="margin: 0px; height: 13px; position: absolute; Top: 122px; 
+              color: #A3AED0; font-size: 14px; line-height: 24px">
+              Cotações não respondidas</p>
+            <p
+              style="margin: 0px; height: 13px; position: absolute; Top: 101px; Left: 100px; 
+            color: #A3AED0; font-size: 18px; line-height: 24px; display: flex; align-items: center; font-weight: bold;">
+              3%</p>
+          </div>
+          <p class="weight" style="margin: 0px; height: 14px; position: absolute; Top: 156px; 
+          color: #05CD99; font-size: 12px; line-height: 20px;">
+            +15,3% (+223)</p>
+        </div>
+
+      </div>
+
+      <!-- Terceiro pacote de cards -->
+
+      <div class="cardSet4">
+
+        <!-- Quarto pacote de cards - Tabelas -->
+
+        <div class="tables" style="position: absolute; left: 20px;">
+          <p style="position: absolute; margin: 0; padding-left: 31px; top: 19px; font-style: normal; font-weight: 700; font-size: 24px; line-height: 32px;
+          display: flex; align-items: center; letter-spacing: -0.02em; color: #2B3674;">
+            Planos</p>
+          <p style="margin: 0px; padding-left: 31px; height: 13px; position: absolute; Top: 51px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px">
+            123 planos ativos</p>
+          <table>
+            <thead>
+              <tr>
+                <th style="padding-left: 31px">CLUBE</th>
+                <th class="space">CLIENTES</th>
+                <th class="space2">PREÇOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding-bottom: 23px; padding-left: 31px">Estagiários</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">Diretoria</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">Geral</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">Almoxarifado</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tables" style="position: absolute; left: 556px;">
+          <p style="position: absolute; margin: 0; padding-left: 31px; top: 19px; font-style: normal; font-weight: 700; font-size: 24px; line-height: 32px;
+          display: flex; align-items: center; letter-spacing: -0.02em; color: #2B3674;">
+            Categorias</p>
+          <p style="margin: 0px; padding-left: 31px; height: 13px; position: absolute; Top: 51px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px">
+            4 categorias em uso</p>
+          <table>
+            <thead>
+              <tr>
+                <th style="padding-left: 31px">CLUBE</th>
+                <th class="space">CLIENTES</th>
+                <th style="position: absolute; left: calc(50% - 92px/2 + 178px);">PREÇO MÉDIO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding-bottom: 23px; padding-left: 31px">6 vendas</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">12 vendas</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">24 vendas</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">Personalizado</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tables" style="position: absolute; left: 1092px;">
+          <p style="position: absolute; margin: 0; padding-left: 31px; top: 19px; font-style: normal; font-weight: 700; font-size: 24px; line-height: 32px;
+          display: flex; align-items: center; letter-spacing: -0.02em; color: #2B3674;">
+            Tipos de plano</p>
+          <p style="margin: 0px; padding-left: 31px; height: 13px; position: absolute; Top: 51px; 
+          color: #A3AED0; font-size: 14px; line-height: 24px">
+            2 tipos em uso</p>
+          <table>
+            <thead>
+              <tr>
+                <th style="padding-left: 31px">CLUBE</th>
+                <th class="space">CLIENTES</th>
+                <th style="position: absolute; left: calc(50% - 92px/2 + 178px);">PREÇO MÉDIO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding-bottom: 23px; padding-left: 31px">Construtoras</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 25px; padding-left: 31px;">Clientes finais</td>
+                <td class="space">312 clientes</td>
+                <td class="space2">R$ 123,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Quarto pacote de cards - Tabelas -->
+
+      <!--  Conteúdo principal -->
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
